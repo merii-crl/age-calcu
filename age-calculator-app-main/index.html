@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+
+  <main>
+    <section class="input">
+      <div class="input-container">
+        <label class="label" for="day">Day</label>
+        <input type="text" class="input-old" id="day" placeholder="DD" required>
+        <p class="errorMessage hidden"></p>
+      </div>
+
+      <div class="input-container">
+        <label class="label" for="month">Month</label>
+        <input type="text" class="input-old" id="month" placeholder="MM" required>
+        <p class="errorMessage hidden"></p>
+      </div>
+
+      <div class="input-container">
+        <label class="label" for="year">Year</label>
+        <input type="text" class="input-old" id="year" maxlength="4" placeholder="YYYY" required>
+        <p class="errorMessage hidden"></p>
+      </div>
+
+    </section>
+
+    <section class="check">
+      <button class="down-arr"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+    </section>
+
+    <section class="result">
+      <p class="num-old"><span class="num-years">--</span>&nbsp;years</p>
+      <p class="num-old"><span class="num-months">--</span>&nbsp;months</p>
+      <p class="num-old"><span class="num-days">--</span>&nbsp;days</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

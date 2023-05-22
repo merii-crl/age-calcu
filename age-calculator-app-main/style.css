@@ -1,0 +1,145 @@
+html {
+  font-size: 62.5%;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 3.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(0, 1%, 44%);
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 58rem;
+  height: 44rem;
+  padding: 4rem;
+  border-radius: 15px;
+  border-bottom-right-radius: 30%;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 6fr;
+  column-gap: 2rem;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+input {
+  font-size: 2rem;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  width: 12rem;
+  height: 5rem;
+}
+
+.errorMessage {
+  font-size: 1rem;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  top: 75px;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.down-arr {
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -3rem;
+  cursor: pointer;
+}
+
+.down-arr svg {
+  width: 8rem;
+}
+
+.check {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.result {
+  margin-top: 4rem;
+}
+
+.num-old {
+  font-size: 6rem;
+  color: hsl(0, 0%, 8%);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.num-years,
+.num-days,
+.num-months {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (max-width:569px) {
+  .input {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .down-arr {
+    right: 40%;
+  }
+
+  html {
+    font-size: 58%;
+
+  }
+
+  main {
+    background-color: hsl(0, 0%, 100%);
+    width: 55rem;
+    height: 42rem;
+    padding: 3rem;
+    margin: 0 23rem;
+  }
+}
